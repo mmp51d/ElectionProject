@@ -682,24 +682,21 @@ header .menu .active {
     clear: both; }
   @media (min-width: 320px) {
     .container {
-      font-size: 5vmin;
+      font-size: 3vmin;
       margin-left: 2.08333%;
-      border-radius: 5px;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
+      border-radius: 0px;
+      -moz-border-radius: 0px;
+      -webkit-border-radius: 0px;
       padding: 5px 10px 5px 10px;
       position: relative;
-      width: 83.33333%;
+      width: 100%;
       float: left;
       padding-left: 1.38889%;
       padding-right: 1.38889%;
-      margin-left: 8.33333%; }
+      margin-left: 0px;
+      padding: 4.16667%; }
       .container.main {
-        width: 91.66667%;
-        float: left;
-        padding-left: 1.38889%;
-        padding-right: 1.38889%;
-        margin-left: 4.16667%; } }
+        padding: 2.08333%; } }
   @media (min-width: 768px) {
     .container {
       font-size: 5vmin;
@@ -910,14 +907,36 @@ button.accordion.active:after {
   align: middle;
   vertical-align: middle; }
 
-.candidates li {
-  vertical-align: middle; }
-
-.candidates .thumb {
-  width: 25%; }
-
-.candidates .thumb .credits {
-  font-size: 1vmin; }
+.candidates {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto; }
+  .candidates:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .candidates .candidate {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    float: left;
+    padding-left: 1.38889%;
+    padding-right: 1.38889%; }
+    .candidates .candidate:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    .candidates .candidate .thumb {
+      width: 33.33333%;
+      float: left;
+      padding-left: 1.38889%;
+      padding-right: 1.38889%; }
+    .candidates .candidate .text {
+      width: 66.66667%;
+      float: left;
+      padding-left: 1.38889%;
+      padding-right: 1.38889%; }
 
 @media only screen and (min-width: 45em) {
   #main_nav {

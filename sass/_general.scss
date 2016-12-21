@@ -283,16 +283,16 @@ header .menu .active{
     
     
     @include breakpoint($mobile){
-        font-size: 5vmin;
+        font-size: 3vmin;
         margin-left: span(.25);
-        @include border-radius(5px);
+        @include border-radius(0px);
         padding: 5px 10px 5px 10px;
         position: relative;
-        @include span(10);
-        margin-left: span(1);
+        @include span(12);
+        margin-left: 0px;
+        padding: span(.5);
         &.main{
-            @include span(11);
-            margin-left: span(.5);
+            padding: span(.25);
         }
     }
     @include breakpoint($tablet){
@@ -524,16 +524,19 @@ align: middle;
 vertical-align: middle;
 }
 
-.candidates li{
-  vertical-align: middle;
-}
-
-.candidates .thumb{
-  width:25%;
-}
-
-.candidates .thumb .credits{
-  font-size: 1vmin;
+.candidates{
+    @include container();
+    .candidate{
+        @include container();
+        @include span(12);
+        .thumb{
+            @include span(4);
+        }
+        .text{
+            @include span(8);
+        }
+    }
+    
 }
 
 
