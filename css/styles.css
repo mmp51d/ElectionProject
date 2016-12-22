@@ -917,12 +917,17 @@ button.accordion.active:after {
 .candidates {
   max-width: 1500px;
   margin-left: auto;
-  margin-right: auto;
-  margin-left: 5.55556%; }
+  margin-right: auto; }
   .candidates:after {
     content: " ";
     display: block;
     clear: both; }
+  @media (min-width: 320px) {
+    .candidates {
+      margin-left: 0px; } }
+  @media (min-width: 1224px) {
+    .candidates {
+      margin-left: 5.55556%; } }
   .candidates .candidate {
     max-width: 1500px;
     margin-left: auto;

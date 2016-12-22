@@ -537,7 +537,12 @@ vertical-align: middle;
 
 .candidates{
     @include container();
-    margin-left: span(2/3);
+    @include breakpoint($mobile){
+        margin-left: 0px;
+    }
+    @include breakpoint($desktop){
+        margin-left: span(2/3);
+    }
     .candidate{
         @include container();
         @include span(12);
