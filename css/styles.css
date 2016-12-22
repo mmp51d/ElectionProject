@@ -583,14 +583,22 @@ textarea {
 body {
   font-family: sans-serif;
   margin: 0px;
-  padding: 0px;
+  padding: 0px; }
+
+.main-container {
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto; }
-  body:after {
+  .main-container:after {
     content: " ";
     display: block;
     clear: both; }
+  .main-container.topmenu ul {
+    width: 88.88889%;
+    float: left;
+    padding-left: 1.38889%;
+    padding-right: 1.38889%;
+    margin-left: 5.55556% !important; }
 
 .top-header {
   font-size: 5vmin;
@@ -664,7 +672,7 @@ header .menu .item:hover {
 
 header .menu .active {
   display: block;
-  background: #3272f1;
+  background: rgba(226, 241, 255, 0.75);
   color: white; }
 
 .container {
@@ -713,18 +721,17 @@ header .menu .active {
       font-size: 3vmin;
       padding: 10px;
       position: relative;
-      float: left;
       width: 41.66667%;
       float: left;
       padding-left: 1.38889%;
       padding-right: 1.38889%;
-      margin-left: 4.16667%; }
+      margin-left: 5.55556%; }
       .container.main {
-        width: 87.5%;
+        width: 88.88889%;
         float: left;
         padding-left: 1.38889%;
         padding-right: 1.38889%;
-        margin-left: 4.16667%; }
+        margin-left: 5.55556%; }
       .container #time {
         font-size: 7vmin; } }
 
@@ -910,7 +917,8 @@ button.accordion.active:after {
 .candidates {
   max-width: 1500px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-left: 5.55556%; }
   .candidates:after {
     content: " ";
     display: block;
@@ -937,6 +945,22 @@ button.accordion.active:after {
       float: left;
       padding-left: 1.38889%;
       padding-right: 1.38889%; }
+    .candidates .candidate.president .thumb {
+      margin-left: 16.66667%;
+      width: 25%;
+      float: left;
+      padding-left: 1.38889%;
+      padding-right: 1.38889%; }
+    .candidates .candidate.president .text {
+      margin-right: 16.66667%;
+      width: 41.66667%;
+      float: left;
+      padding-left: 1.38889%;
+      padding-right: 1.38889%; }
+
+@media (min-width: 1224px) {
+  .container.moreinfo {
+    clear: left; } }
 
 @media only screen and (min-width: 45em) {
   #main_nav {

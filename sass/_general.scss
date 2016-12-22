@@ -44,6 +44,8 @@ img,video{
 }
 
 
+
+
 /* Embedded Video Styles
 
     These can be used to help add embedded video content, like YouTube videos, to your page. These styles require you set up your HTML in a specific way. See this CodePen for an example of it in use: http://codepen.io/profstein/pen/mArLRj
@@ -196,7 +198,17 @@ body{
     font-family: sans-serif;
     margin: 0px;
     padding: 0px;
-    @include container(12 center);
+    //@include container(12 center);
+}
+
+.main-container{
+    @include container();
+    &.topmenu{
+        ul{
+            @include span(10.6666666667);
+            margin-left: span(2/3) !important;
+        }
+    }
 }
 
 .top-header{
@@ -268,7 +280,7 @@ header .menu .item:hover{
 
 header .menu .active{
     display: block;
-    background: rgba(50, 114, 241, 1);
+    background: $container-bg;
     color: white
 }
 
@@ -307,12 +319,11 @@ header .menu .active{
         font-size: 3vmin;
         padding: 10px;
         position: relative;
-        float: left;
         @include span(5);
-        margin-left: span(2/4);
+        margin-left: span(2/3);
         &.main{
-            @include span(10.5);
-            margin-left: span(.5);
+            @include span(10.6666666667);
+            margin-left: span(2/3);
         }
         
         
@@ -526,6 +537,7 @@ vertical-align: middle;
 
 .candidates{
     @include container();
+    margin-left: span(2/3);
     .candidate{
         @include container();
         @include span(12);
@@ -535,10 +547,27 @@ vertical-align: middle;
         .text{
             @include span(8);
         }
+        
+        &.president{
+            .thumb{
+                margin-left: span(2);
+                @include span(3);
+            }
+            .text{
+                margin-right: span(2);
+                @include span(5);
+            }
+        }
     }
     
 }
 
+
+    .container.moreinfo{
+        @include breakpoint($desktop){
+            clear: left;
+        }
+    }
 
 @media only screen and (min-width: 45em) {
 

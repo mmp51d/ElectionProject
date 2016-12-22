@@ -5,9 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home - NYC Votes</title>
-    <link rel="stylesheet" href="css/normalized-reset.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
-    <link href="css/navigation.css" rel="stylesheet" type="text/css" />
+       <link rel="stylesheet" href="css/font-awesome/scss/font-awesome.css">
         <!-- styles the navigation, can change or replace -->
 </head>
 <body>
@@ -23,33 +22,35 @@
             <li id="menu_about" class="item" onclick="display('menu')">About</li>
         </ul>-->
         
-        <div class="top-header">
+        <div class="main-container"><div class="top-header">
             <div class="vote9">
                 <h3>G.O.T.</h3>
                 <h2>VOTE</h2>
                 <h3>NYC<span>&#10004;</span></h3>
             </div>
-        </div>
+        </div></div>
+        
         <div class="menu">
             <a href="#" id="menu_button">Menu</a>
         </div>
 
         <nav id="main_nav">
-            <ul>
+           
+            <div class="main-container topmenu"><ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Register.html">Register to Vote</a></li>
                 <li><a href="electionday.html">Elections Day</a></li>
                 <li><a href="candidates.html">Candidates</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="resources.html">Resources</a></li>
-            </ul>
+            </ul></div>
         </nav>
     </header>
     
     
         
     
-    
+<div class="main-container">
     <div class="container" id="countdown">
         TIME LEFT UNTIL ELECTION DAY
         <div id="time"></div>
@@ -88,6 +89,7 @@
     <a href="resources.html"><div class="container link main">
         Election Resources
     </div></a>
+    </div>
     
 </body>
 <script src="js/scripts.js" type="text/javascript"></script>
